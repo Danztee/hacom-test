@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./hacom-favicon.png" />
+    <title>Hacom Energy Limited - Orion AMI</title>
+    <meta
+      name="description"
+      content="Hacom Energy Limited specializes in Smart Metering and Independent Power Solutions. Explore our innovative energy solutions and smart metering technology for a sustainable future."
+    />
+    
+    <script type="module" crossorigin src="./assets/modulepreload-polyfill-3cfb730f.js"></script>
+    <script type="module" crossorigin src="./assets/articles-fb9670e2.js"></script>
+    <script type="module" crossorigin src="./assets/script-16df67d1.js"></script>
+    <link rel="stylesheet" href="./assets/main-7c8ef494.css">
+    <link rel="stylesheet" href="./assets/style-469cba4f.css">
+  </head>
+  <body>
+    <header class="header px-4 lg:px-16">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="/" class="nav__logo">
+            <img src="./assets/hacom-white.png" alt="logo" class="w-[150px]" />
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#fff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="/about.html" class="nav__link">About</a></li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Products
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-chevron-down"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 9l6 6l6 -6" />
+                </svg>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="/products.html" class="dropdown__link"
+                    >Product Overview</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/water-meter.html" class="dropdown__link"
+                    >Water Meter</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/gas-meter.html" class="dropdown__link">Gas Meter</a>
+                </li>
+
+                <li>
+                  <a href="/dual-meter.html" class="dropdown__link"
+                    >Dual Source Meter</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/smart-meter.html" class="dropdown__link"
+                    >Smart Meter</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/mini-grid.html" class="dropdown__link">Mini Grid</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Services
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-chevron-down"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 9l6 6l6 -6" />
+                </svg>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="/orion-ami.html" class="dropdown__link">Orion AMI</a>
+                </li>
+
+                <li>
+                  <a href="/oliva.html" class="dropdown__link"
+                    >Oliva Utility Vending</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/premium-electricity.html" class="dropdown__link"
+                    >Premium Electricity</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/gas-as-a-service.html" class="dropdown__link"
+                    >Gas as a service</a
+                  >
+                </li>
+
+                <li>
+                  <a href="/water-as-a-service.html" class="dropdown__link"
+                    >Water as a service
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/power-as-a-service.html" class="dropdown__link"
+                    >Power as a service</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Case Studies
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-chevron-down"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 9l6 6l6 -6" />
+                </svg>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="case-study-1.html" class="dropdown__link"
+                    >Power of Orion AMI</a
+                  >
+                </li>
+
+                <li>
+                  <a href="case-study-2.html" class="dropdown__link"
+                    >Grey Garden Estate</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          onclick="window.location.href = '/contact.html'"
+          class="hidden lg:block bg-[var(--secondary-color)] hover:bg-transparent hover:border-[#fff] hover:border transition-all rounded-md px-6 py-3 text-white"
+        >
+          Contact Us
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        class="flex items-center h-screen md:h-[calc(100vh_-_70px)] pb-10 md:py-10 bg-[var(--primary-light-color)] justify-center"
+      >
+        <div class="md:w-[800px] mx-auto">
+          <div class="flex justify-center mb-4">
+            <img
+              src="./assets/hacom-full-logo.png"
+              alt="logo"
+              class="w-[200px]"
+            />
+          </div>
+          <h1 class="text-3xl lg:text-6xl text-center font-bold">
+            Advanced Metering Infrastructure
+          </h1>
+
+          <p class="mt-8 text-center">
+            Orion Advanced Metering Infrastructure (AMI) is not your average
+            metering system. It's a comprehensive energy business intelligence
+            platform that goes beyond the basics. It's about ensuring that your
+            electricity distribution is optimized, no matter the scale.
+            <br />
+            <br />
+            With our AMI, you can entrust us with your meter data, and we'll
+            harness the power of our advanced analytics tools to provide
+            invaluable insights into electricity consumption. Whether you're
+            company serving an entire city or a local school, we can help you
+            identify consumption patterns and make data-driven decisions.
+          </p>
+
+          <div class="flex justify-center mt-6">
+            <a
+              href="/case-studies-2.html"
+              class="flex items-center gap-1 bg-white text-black w-fit p-2"
+            >
+              View case studies
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-chevrons-up-right"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 7h8v8" />
+                <path d="M5 11h8v8" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="pb-20 pt-10 px-6 md:px-16 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-10 py-20 items-center">
+          <aside>
+            <h3
+              class="font-semibold mb-4 text-2xl uppercase text-[var(--secondary-color)]"
+            >
+              System Overview
+            </h3>
+
+            <p>
+              Advanced Metering Infrastructure (AMI) is more than a mere
+              metering system; it's a comprehensive energy business intelligence
+              platform. It's the tool you need to optimize your electricity
+              distribution, regardless of the scale of your operations.
+            </p>
+
+            <div
+              class="bg-[var(--primary-color)] p-3 rounded-lg mt-4 text-white"
+            >
+              <p>
+                AMI stands for "Advanced Metering Infrastructure," and it works
+                with various meter data types, including gas, electricity, and
+                water.
+              </p>
+            </div>
+          </aside>
+
+          <aside>
+            <img src="./assets/power-smart.jpeg" alt="power-smart" />
+          </aside>
+        </div>
+
+        <div class="pt-10">
+          <div class="border p-6">
+            <div class="flex justify-center my-6">
+              <h3
+                class="font-semibold text-2xl uppercase text-center bg-[var(--primary-color)] text-white w-fit p-2"
+              >
+                what to know
+              </h3>
+            </div>
+
+            <div class="what"></div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div
+            class="grid md:grid-cols-2 gap-10 py-10 md:py-20 items-center grid-with-border bg-white rounded-lg"
+          >
+            <aside>
+              <h3
+                class="font-semibold text-2xl uppercase text-center text-[var(--secondary-color)]"
+              >
+                core technology
+              </h3>
+            </aside>
+
+            <aside class="flex flex-col gap-4 p-4 md:p-0">
+              <div>
+                <p>
+                  Perform real-time data analytics, giving you immediate
+                  visibility into consumption patterns and any anomalies.
+                </p>
+                <Divider class="mt-2" />
+              </div>
+
+              <div>
+                <p>
+                  Encryption and secure protocols to protect data from
+                  unauthorized access or interception.
+                </p>
+                <Divider class="mt-2" />
+              </div>
+
+              <div>
+                <p>
+                  Transmit data in real-time to the central server, ensuring
+                  that you have up-to-the-minute information.
+                </p>
+                <Divider class="mt-2" />
+              </div>
+
+              <div>
+                <p>
+                  Support bidirectional communication, enabling you to remotely
+                  manage meters, send commands, and receive alerts.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div class="pt-10">
+          <h3
+            class="font-semibold mb-4 text-2xl text-center uppercase text-[var(--secondary-color)]"
+          >
+            System Function Features
+          </h3>
+
+          <div class="grid md:grid-cols-2 gap-10 py-10 items-center">
+            <aside>
+              <img src="./assets/ami11.jpeg" alt="ami" />
+            </aside>
+
+            <aside>
+              <ul class="list-[square] flex flex-col gap-4 ml-8 mt-4">
+                <li>
+                  Access meter data remotely from anywhere, enabling you to
+                  monitor consumption patterns with ease.
+                </li>
+
+                <li>
+                  Receive real-time alerts whenever power outages occur,
+                  allowing for swift response and minimal disruption to
+                  operations.
+                </li>
+
+                <li>
+                  Optimize power distribution by balancing loads across
+                  different areas or entities, ensuring an even and efficient
+                  energy distribution.
+                </li>
+
+                <li>
+                  Identify and mitigate electricity theft, safeguarding your
+                  revenue and protecting your bottom line.
+                </li>
+
+                <li>
+                  Create customized reports tailored to your specific needs,
+                  track revenue, consumption, and other key metrics that matter
+                  most to your business.
+                </li>
+
+                <li>
+                  Gain deep insights into electricity consumption patterns,
+                  allowing you to make informed decisions and further improve
+                  efficiency.
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+
+        <div class="pt-10">
+          <h1
+            class="text-2xl font-bold text-[var(--secondary-color)] uppercase text-center"
+          >
+            at a glance
+          </h1>
+
+          <div class="grid md:grid-cols-4 gap-4 mt-6">
+            <aside class="bg-[#EEF9FF] p-3">
+              <div class="flex justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[40px]"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path
+                    d="M208,40H48A16,16,0,0,0,32,56v48a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V56A16,16,0,0,0,208,40ZM180,92a12,12,0,1,1,12-12A12,12,0,0,1,180,92Z"
+                  ></path>
+                  <path
+                    d="M208,136H48a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V152A16,16,0,0,0,208,136Zm-28,52a12,12,0,1,1,12-12A12,12,0,0,1,180,188Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="font-bold text-lg mb-2 mt-1 text-center">
+                Intelligent Application <br />
+                Layer
+              </h3>
+              <p>
+                This layer uses workflow, self-defined reports, GIS integration
+                technology and data mining technology to provide insights to the
+                data and provide a smart decision support system for utilities.
+              </p>
+            </aside>
+
+            <aside class="bg-[#EEF9FF] p-3">
+              <div class="flex justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[40px]"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path
+                    d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.7,87.7,0,0,1-33.6,69.2A16.1,16.1,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16.2,16.2,0,0,0-6.2-12.7A87.8,87.8,0,0,1,40,104.5C39.7,56.8,78.3,17.1,125.9,16A87.9,87.9,0,0,1,216,104Zm-32.8-9.4a55.8,55.8,0,0,0-45.8-45.7,8,8,0,1,0-2.6,15.8,39.7,39.7,0,0,1,32.6,32.6,8,8,0,0,0,7.9,6.6h1.4A7.9,7.9,0,0,0,183.2,94.6Z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="font-bold text-lg mb-2 mt-1 text-center">
+                Smart Acquisition <br />
+                Layer
+              </h3>
+              <p>
+                This layer supports multiple protocols DLMS COSEM, IDIS, Q/GDW
+                376.1 through the plug-in protocol library, and is seamlessly
+                compatible with multiple databases (Oracle, MySQL), which
+                supports cluster deployment
+              </p>
+            </aside>
+
+            <aside class="bg-[#EEF9FF] p-3">
+              <div class="flex justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[40px]"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle cx="128" cy="128" r="40"></circle>
+                  <path
+                    d="M82.7,82.7a7.9,7.9,0,0,0,0-11.3,8,8,0,0,0-11.3,0A80,80,0,0,0,54.3,96.9a79.9,79.9,0,0,0,0,62.2,80,80,0,0,0,17.1,25.5,8.3,8.3,0,0,0,5.7,2.3,8,8,0,0,0,5.6-2.3,7.9,7.9,0,0,0,0-11.3A65.4,65.4,0,0,1,69,152.9a64.5,64.5,0,0,1,0-49.8A65.4,65.4,0,0,1,82.7,82.7Z"
+                  ></path>
+                  <path
+                    d="M208,128a78.6,78.6,0,0,0-6.3-31.1,80,80,0,0,0-17.1-25.5,8,8,0,0,0-11.3,0,7.9,7.9,0,0,0,0,11.3A65.4,65.4,0,0,1,187,103.1a64.5,64.5,0,0,1,0,49.8,65.4,65.4,0,0,1-13.7,20.4,7.9,7.9,0,0,0,0,11.3,8,8,0,0,0,5.6,2.3,8.3,8.3,0,0,0,5.7-2.3,80,80,0,0,0,17.1-25.5A78.6,78.6,0,0,0,208,128Z"
+                  ></path>
+                  <path
+                    d="M32.2,168.5a104.1,104.1,0,0,1,0-81,101.3,101.3,0,0,1,22.3-33A8.1,8.1,0,0,0,43.1,43.1,121.8,121.8,0,0,0,17.4,81.3a120.7,120.7,0,0,0,0,93.4,121.8,121.8,0,0,0,25.7,38.2,8.5,8.5,0,0,0,5.7,2.3,8.3,8.3,0,0,0,5.7-2.3,8.1,8.1,0,0,0,0-11.4A101.3,101.3,0,0,1,32.2,168.5Z"
+                  ></path>
+                  <path
+                    d="M238.6,81.3a121.8,121.8,0,0,0-25.7-38.2,8.1,8.1,0,1,0-11.4,11.4A103.5,103.5,0,0,1,232,128a103.5,103.5,0,0,1-30.5,73.5,8.1,8.1,0,0,0,0,11.4,8.3,8.3,0,0,0,5.7,2.3,8.5,8.5,0,0,0,5.7-2.3,121.8,121.8,0,0,0,25.7-38.2,120.7,120.7,0,0,0,0-93.4Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="font-bold text-lg mb-2 mt-1 text-center">
+                Robust Communications <br />
+                Layer
+              </h3>
+              <p>
+                The communication layer supports a variety of communication
+                methods (LAN communication: RS485, Wi-Fine, PLC, LoRa; WAN
+                communication: GPRS, NB-IoT, Ethernet, WiFi), which can adapt to
+                different applications
+              </p>
+            </aside>
+
+            <aside class="bg-[#EEF9FF] p-3">
+              <div class="flex justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[40px]"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path
+                    d="M224,200H40V163.6l56.4-49.3,58.8,44.1a8,8,0,0,0,10.1-.4l64-56a8,8,0,1,0-10.6-12l-59.1,51.7L100.8,97.6a8,8,0,0,0-10.1.4L40,142.4V48a8,8,0,0,0-16,0V208a8,8,0,0,0,8,8H224a8,8,0,0,0,0-16Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="font-bold text-lg mb-2 mt-1 text-center">
+                Reliable System
+              </h3>
+              <p>
+                After fusing the several layers, Olivia delivers excellent meter
+                reading management, power distribution management, and
+                enterprise power consumption through power analysis model, power
+                supply quality, load analysis, power supply reliability, power
+                tampering analysis, power consumption analysis, and statistical
+                reports.
+              </p>
+            </aside>
+          </div>
+        </div>
+
+        <div class="pt-20">
+          <h1
+            class="font-semibold text-2xl uppercase text-center text-[var(--secondary-color)]"
+          >
+            Customer Benefits
+          </h1>
+
+          <div class="grid md:grid-cols-3 gap-4 mt-6">
+            <aside
+              class="border-none p-4 rounded-lg"
+              style="background-color: #e4e7f6"
+            >
+              <h1 class="font-bold mb-2">Revenue Protection</h1>
+              <p>
+                AMI identifies instances of electricity theft, helping you take
+                swift action to protect your revenue.
+              </p>
+            </aside>
+            <aside
+              class="border-none p-4 rounded-lg"
+              style="background-color: #f6e4f5"
+            >
+              <h1 class="font-bold mb-2">Cost Savings</h1>
+              <p>
+                Data insights help you make informed decisions regarding energy
+                procurement, avoiding over-purchasing or shortages.
+              </p>
+            </aside>
+            <aside
+              class="border-none p-4 rounded-lg"
+              style="background-color: #fae5e6"
+            >
+              <h1 class="font-bold mb-2">Environmental Impact</h1>
+              <p>
+                AMI helps you maximize the use of renewable energy sources,
+                contributing to environmental preservation.
+              </p>
+            </aside>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-10">
+          <button
+            onclick="window.location.href = '/contact.html'"
+            class="bg-[var(--secondary-color)] hover:bg-transparent hover:border-[#fff] hover:border transition-all rounded-md px-6 py-3 text-white"
+          >
+            Inquire now
+          </button>
+        </div>
+      </section>
+
+      <section class="pb-20 px-4 lg:px-16 max-w-7xl mx-auto">
+        <div
+          class="grid md:grid-cols-2 gap-6 md:gap-10 bg-[#000719] text-white p-10 md:p-20 items-center rounded-lg"
+        >
+          <aside>
+            <h1 class="text-3xl md:text-5xl font-bold">
+              Ready to
+              <span class="text-[var(--secondary-color)]">partner</span> with
+              us?
+            </h1>
+          </aside>
+
+          <aside class="flex flex-col gap-8">
+            <p>
+              Grow your business while reducing operational cost and time and
+              keeping the core business focus in-house.
+            </p>
+            <div class="flex justify-start">
+              <button
+                onclick="window.location.href = '/contact.html'"
+                class="bg-[var(--secondary-color)] hover:bg-transparent hover:border-[#fff] hover:border transition-all rounded-md px-6 py-3 text-white"
+              >
+                Get in touch
+              </button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="bg-[var(--primary-light-color)] px-6 md:px-16 py-20">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
+            <aside
+              class="bg-white rounded-lg p-10"
+              style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px"
+            >
+              <img
+                src="./assets/hacom-full-logo.png"
+                alt="logo"
+                class="w-[150px]"
+              />
+
+              <div class="grid grid-cols-2 gap-10 mt-10">
+                <div>
+                  <h3
+                    class="font-bold mb-2 text-lg text-[var(--secondary-color)]"
+                  >
+                    Lekki
+                  </h3>
+                  <p class="text-sm text-[#828282] font-semibold">
+                    3rd Floor, Brasasr’ Place, 69 Admiralty Way, Lekki Phase 1,
+                    Lekki, Lagos State.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    class="font-bold mb-2 text-lg text-[var(--secondary-color)]"
+                  >
+                    Ikeja
+                  </h3>
+                  <p class="text-sm text-[#828282] font-semibold">
+                    16 Francis Oremeji Street, Ikeja, Lagos State.
+                  </p>
+                </div>
+
+                <div>
+                  <h3
+                    class="font-bold mb-2 text-lg text-[var(--secondary-color)]"
+                  >
+                    Ilorin
+                  </h3>
+                  <p class="text-sm text-[#828282] font-semibold">
+                    1 Police Road, GRA, Ilorin, Kwara State.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 mt-8">
+                <a href="https://twitter.com/HacomEnergy" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-twitter hover:stroke-[var(--secondary-color)]"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#868E96"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/hacom-energy-limited/about/"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-linkedin hover:stroke-[var(--secondary-color)]"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#868E96"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                    />
+                    <path d="M8 11l0 5" />
+                    <path d="M8 8l0 .01" />
+                    <path d="M12 16l0 -5" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                  </svg>
+                </a>
+              </div>
+            </aside>
+
+            <aside>
+              <div class="flex flex-wrap gap-10">
+                <ul
+                  class="text-[#828282] font-semibold text-sm flex flex-col gap-2"
+                >
+                  <h5 class="text-lg text-[var(--secondary-color)] mb-3">
+                    Services
+                  </h5>
+
+                  <li>
+                    <a href="/orion-ami.html" class="hover:underline"
+                      >Orion AMI</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/orion-ami.html" class="hover:underline"
+                      >Oliva Utility Vending</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/gas-as-a-service.html" class="hover:underline"
+                      >Gas as a Service</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/water-as-a-service.html" class="hover:underline"
+                      >Water as a Service</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/power-as-a-service.html" class="hover:underline"
+                      >Power as a Service</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/magazine.html" class="hover:underline"
+                      >Magazine</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="text-[#828282] font-semibold text-sm flex flex-col gap-2"
+                >
+                  <h5 class="text-lg text-[var(--secondary-color)] mb-3">
+                    Products
+                  </h5>
+
+                  <li>
+                    <a href="/products.html" class="hover:underline"
+                      >Product overview</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/water-meter.html" class="hover:underline"
+                      >Water Meter</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/gas-meter.html" class="hover:underline"
+                      >Gas Meter</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/dual-meter.html" class="hover:underline"
+                      >Dual Source Meter</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/smart-meter.html" class="hover:underline"
+                      >Smart Meter</a
+                    >
+                  </li>
+                  <li>
+                    <a href="/mini-grid.html" class="hover:underline"
+                      >Mini Grid</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="text-[#828282] font-semibold text-sm flex flex-col gap-2"
+                >
+                  <h5 class="text-lg text-[var(--secondary-color)] mb-3">
+                    Contact Us
+                  </h5>
+
+                  <li>
+                    <a
+                      href="mailto:hello@hacomenergy.com"
+                      class="hover:underline"
+                      target="_blank"
+                      >hello@hacomenergy.com</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tel:+2347014207004"
+                      class="hover:underline"
+                      target="_blank"
+                    >
+                      +2347014207004</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[var(--primary-color)] text-white py-6">
+        <p class="text-center">
+          &copy; <span id="currentYear"></span> Hacom Energy. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
